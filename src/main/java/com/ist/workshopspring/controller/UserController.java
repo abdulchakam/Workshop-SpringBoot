@@ -17,6 +17,7 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
+    // This change from branch master
     @GetMapping(value = "/getallusers")
     public ResponseEntity<List<User>> getAllUsers(){
         List<User> result = userRepository.findAll();
